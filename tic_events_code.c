@@ -32,6 +32,11 @@ void mark() {
         //pressed_btt->Active = 0;
 
         pressed_btt->caption[0]=curr-32;
+        if(curr=='x'){
+         pressed_btt->Font_Color=0x00FF;
+        }else if(curr=='o'){
+         pressed_btt->Font_Color=0xF800;
+        }
         DrawButton(pressed_btt);
 
         if(check_win(row,col)){
